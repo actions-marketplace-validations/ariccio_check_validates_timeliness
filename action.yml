@@ -7,7 +7,7 @@ branding:
 outputs:
   maybe-new-version:
     description: non-null if the latest reported version has changed
-    value: $${{ steps.run.outputs }}
+    value: $${{ steps.run.outputs.maybe-new-version }}
 runs:
   using: 'composite'
   steps:
