@@ -5,8 +5,8 @@ require 'gems'
 
 # RUBYGEMS_API_BASE_URL = 'https://rubygems.org/api/v2/rubygems/'
 
-# CURRENT_VERSION = '6.0.0.beta2'
-CURRENT_VERSION = 'fartipelago'
+CURRENT_VERSION = '6.0.0.beta2'
+# CURRENT_VERSION = 'fartipelago'
 # def check_validates_timeliness
 #     validates_timeliness_in_rubygems = "#{RUBYGEMS_API_BASE_URL}/validates_timeliness"
 # end
