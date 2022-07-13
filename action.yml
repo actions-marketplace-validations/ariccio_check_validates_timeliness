@@ -1,0 +1,9 @@
+name: 'check validates_timeliness new version'
+description: 'For the devs who installed a different branch to support Rails 7 and still want to know if an official version is available.'
+author: '@ariccio'
+runs:
+  using: 'composite'
+  steps:
+    - run: |
+        bundle exec ruby run.rb
+      shell: bash
