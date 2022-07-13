@@ -15,7 +15,7 @@ def run
 
     correct_latest_version = Gems.versions('validates_timeliness')[0]["number"]
     if (correct_latest_version != CURRENT_VERSION)
-        pp "Possible new version available: #{correct_latest_version}"
+        puts "Possible new version available: #{correct_latest_version}"
     end
     # pp "\"latest_version\" #{Gems.latest_version('validates_timeliness')}"
 end
