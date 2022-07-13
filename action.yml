@@ -4,6 +4,10 @@ author: '@ariccio'
 branding:
   icon: code
   color: red
+outputs:
+  maybe-new-version:
+    description: non-null if the latest reported version has changed
+    value: $${{ steps.run.outputs }}
 runs:
   using: 'composite'
   steps:
