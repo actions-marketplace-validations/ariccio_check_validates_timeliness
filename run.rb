@@ -9,9 +9,13 @@ require 'gems'
 #     validates_timeliness_in_rubygems = "#{RUBYGEMS_API_BASE_URL}/validates_timeliness"
 # end
 
-correct_latest_version = Gems.versions('validates_timeliness')[0]["number"]
+def run
+    correct_latest_version = Gems.versions('validates_timeliness')[0]["number"]
+    
+    pp "latest correct version: #{correct_latest_version}"
+    pp "\"latest_version\" #{Gems.latest_version('validates_timeliness')}"
+end
 
-pp "latest correct version: #{correct_latest_version}"
-pp "\"latest_version\" #{Gems.latest_version('validates_timeliness')}"
+run
 
 
