@@ -13,5 +13,5 @@ runs:
   steps:
     - run: |
         echo '::echo::on'
-        echo ::set-output name=maybe-new-version::$((bundle exec ruby run.rb))
+        echo ::set-output name=maybe-new-version::$(bundle exec ruby run.rb)
       shell: bash
